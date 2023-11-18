@@ -21,7 +21,9 @@ class KbApiController extends Controller
         //     'quiz_ids.quiz_id'
         // )
         //     ->get(['jkssb_mcqs.*', 'quiz_ids.slug']);
-
+        return response([
+            'msg' => 'hello world'
+        ]);
         $computer = ComputerMcq::join(
             'quiz_ids',
             'computer_mcqs.quiz_id',
