@@ -13,7 +13,10 @@ class ExamController extends Controller
     public function index()
     {
         //
-        return Exam::all();
+        // return Exam::all();
+        return response([
+            'msg' => 'hello there'
+        ]);
     }
 
     /**
